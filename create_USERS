@@ -1,0 +1,9 @@
+create user administrator identified by 'admin';
+create user pattern identified by 'padrao';
+create user user identified by 'usuario';
+create user query identified by 'consulta';
+
+grant all privileges on senai_compras.* to administrador;
+grant insert, select, create, drop, update, delete on senai_compras.* to padrao;
+grant insert, select on senai_compras.* to usuario;
+grant select on senai_compras.* to consulta;
